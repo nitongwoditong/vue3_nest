@@ -20,9 +20,9 @@ export default defineConfig({
     port: 3001, //服务端口
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
+        target:'http://localhost:3000/',
+        changeOrigin:true,
+        rewrite: path => path.replace(/^\/api/, ''),
       }
     }
   },
