@@ -36,7 +36,7 @@
     <img class="w-100px h-40px ml-90px mb-10px" :src="codeUrl" alt="">
 
     <a-form-item :wrapper-col="{ offset: 8, span: 16 }">
-      <a-button type="primary" html-type="submit" @click="submit">Submit</a-button>
+      <a-button type="primary" html-type="submit" @click="submit">登录</a-button>
     </a-form-item>
   </a-form>
 </template>
