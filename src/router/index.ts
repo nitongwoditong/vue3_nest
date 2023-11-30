@@ -3,7 +3,7 @@ const history = createWebHistory();
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    redirect: "/home",
+    redirect: "/login",
   },
   {
     path: "/home",
@@ -11,9 +11,19 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/home/index.vue"),
   },
   {
+    path: "/homepage",
+    name: "homepage",
+    component: () => import("../views/home/homepage.vue"),
+  },
+  {
     path: "/login",
     name: "login",
     component: () => import("../views/login/index.vue"),
+  },
+  {
+    path: "/curd",
+    name: "curd",
+    component: () => import("../views/curd/index.vue"),
   },
 ];
 const router = createRouter({
